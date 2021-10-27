@@ -32,7 +32,9 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +56,8 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.3.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.4.1"
   }
 }
